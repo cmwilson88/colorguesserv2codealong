@@ -15,10 +15,14 @@ body {
 	float: left;
 }
 
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
 h1 {
 	color: white;
 }
 
-span {
-	color: white;
-}
+
