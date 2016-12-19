@@ -17,7 +17,7 @@ easyBtn.addEventListener("click", function(){
 	colors = generateRandomColors(numSquares);
 	pickedColor = pickColor();
 	colorDisplay.textContent = pickedColor;
-	for (var i = 0; i < squares.length; i++) {
+	for (var i = 0; i < squares.length; i++) {;
 		if(colors[i]){
 			squares[i].style.background = colors[i];
 		} else {
@@ -40,6 +40,7 @@ hardBtn.addEventListener("click", function(){
 });
 
 resetButton.addEventListener("click", function(){
+	resetButton.textContent = "New Colors";
 	//generate all new colors
 	colors = generateRandomColors(numSquares);
 	//pick new random color from array
